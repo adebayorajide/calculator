@@ -3,7 +3,7 @@ let buttons = document.querySelectorAll(".button");
 
 buttons.forEach((button)=>{
     button.addEventListener("click", (e)=>{
-        console.log(e.target.innerText);
+       // console.log(e.target.innerText);
         switch(e.target.innerText) {
 
             case 'C':
@@ -11,8 +11,13 @@ buttons.forEach((button)=>{
             break;
 
             case '+/-':
-                display.innerText = "-";
+                display.innerText = "-" + display.innerText;
                 break;
+
+            case '÷':
+                display.innerText += '/';
+                break;
+
             case '=':
                 try {
                     display.innerText = eval(display.innerText);
