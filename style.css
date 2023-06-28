@@ -8,6 +8,11 @@ body {
     transition: 0.4s;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .input {
     width: 90px;
     visibility: hidden;
@@ -65,7 +70,7 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 10vh auto 0 auto;
+    margin: 5vh auto 0 auto;
     box-shadow: 0 0 43px 17px rgba(153, 153, 153, 1);
     /* padding: 1rem; */
 }
